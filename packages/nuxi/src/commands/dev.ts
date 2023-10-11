@@ -259,9 +259,19 @@ function _resolveListenOptions(
     ?? process.env.PORT
     ?? nuxtOptions.devServer.port
 
-  const _hostname = typeof args.host === 'string'
-    ? args.host
-    : (args.host === true ? '' : undefined)
+  const _socket: string | undefined = (
+    args.socket as string
+    ?? process.env.NUXT_SOCKET
+    ?? process.env.NITRO_SOCKET
+    ?? process.env.SOCKET
+    ?? nuxtOptions.devServer.socket
+    ?? undefined
+  )
+
+  const _hostname
+    = typeof args.host === 'string'
+      ? args.host
+      : (args.host === true ? '' : undefined)
       ?? process.env.NUXT_HOST
       ?? process.env.NITRO_HOST
       ?? process.env.HOST
@@ -317,6 +327,7 @@ function _resolveListenOptions(
     ..._listhenOptions,
     port: _port,
     hostname: _hostname,
+    socket: _socket,
     public: _public,
     https: httpsOptions,
     baseURL: nuxtOptions.app.baseURL.startsWith('./') ? nuxtOptions.app.baseURL.slice(1) : nuxtOptions.app.baseURL,
