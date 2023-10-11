@@ -6,12 +6,13 @@ settings:
 
 overrides:
   '@nuxt/cli': workspace:*
-  '@nuxt/schema': 3.16.0
+  '@nuxt/schema': Cheaterman/nuxt#schema
   create-nuxt: workspace:*
   create-nuxt-app: workspace:*
   h3: ^1.15.1
   nitropack: npm:nitropack-nightly
   nuxi: workspace:*
+  listhen: Cheaterman/listhen#ipc-listhen
 
 importers:
 
@@ -100,8 +101,8 @@ importers:
         specifier: ^3.16.0
         version: 3.16.0(magicast@0.3.5)
       '@nuxt/schema':
-        specifier: 3.16.0
-        version: 3.16.0
+        specifier: Cheaterman/nuxt#schema
+        version: nuxt-framework@https://codeload.github.com/Cheaterman/nuxt/tar.gz/3d6addec736cf53411145c99ace3c90c4d65bb73
       '@nuxt/test-utils':
         specifier: ^3.17.2
         version: 3.17.2(@types/node@22.13.10)(jiti@2.4.2)(magicast@0.3.5)(terser@5.37.0)(typescript@5.8.2)(vitest@3.0.8(@types/debug@4.1.12)(@types/node@22.13.10)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))(yaml@2.7.0)
@@ -145,8 +146,8 @@ importers:
         specifier: ^2.4.2
         version: 2.4.2
       listhen:
-        specifier: ^1.9.0
-        version: 1.9.0
+        specifier: Cheaterman/listhen#ipc-listhen
+        version: https://codeload.github.com/Cheaterman/listhen/tar.gz/f4a2643e3da3f6816b8fc003dd34a6e9a5aedbd2
       magicast:
         specifier: ^0.3.5
         version: 0.3.5
@@ -241,8 +242,8 @@ importers:
         specifier: ^2.4.2
         version: 2.4.2
       listhen:
-        specifier: ^1.9.0
-        version: 1.9.0
+        specifier: Cheaterman/listhen#ipc-listhen
+        version: https://codeload.github.com/Cheaterman/listhen/tar.gz/f4a2643e3da3f6816b8fc003dd34a6e9a5aedbd2
       nypm:
         specifier: ^0.6.0
         version: 0.6.0
@@ -1031,10 +1032,6 @@ packages:
   '@nuxt/kit@3.16.0':
     resolution: {integrity: sha512-yPfhk58BG6wJhELkGOTCOlkMDbZkizk3IaINcyTKm+hBKiK3SheLt7S9HStNL+qZSfH2Cf7A8sYp6M72lOIEtA==}
     engines: {node: '>=18.12.0'}
-
-  '@nuxt/schema@3.16.0':
-    resolution: {integrity: sha512-uCpcqWO6C4P5c4vi1/sq5GyajO0EOp+ZWFtPrnKaJ1pXAhA+W1aMVxAjfi2f18QMJHuRXBz1TouFg1RmWA6FuA==}
-    engines: {node: ^14.18.0 || >=16.10.0}
 
   '@nuxt/telemetry@2.6.5':
     resolution: {integrity: sha512-lwMp9OHML/m0mjh7P5iz9PxINnk5smGkGebh88Wh8PjvnRooY1TBsbyq7mlSrNibpwD1BkwqhV5IAZOXWHLxMQ==}
@@ -3264,8 +3261,9 @@ packages:
     resolution: {integrity: sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==}
     engines: {node: '>=14'}
 
-  listhen@1.9.0:
-    resolution: {integrity: sha512-I8oW2+QL5KJo8zXNWX046M134WchxsXC7SawLPvRQpogCbkyQIaFxPE89A2HiwR7vAK2Dm2ERBAmyjTYGYEpBg==}
+  listhen@https://codeload.github.com/Cheaterman/listhen/tar.gz/f4a2643e3da3f6816b8fc003dd34a6e9a5aedbd2:
+    resolution: {tarball: https://codeload.github.com/Cheaterman/listhen/tar.gz/f4a2643e3da3f6816b8fc003dd34a6e9a5aedbd2}
+    version: 1.9.0
     hasBin: true
 
   local-pkg@1.0.0:
@@ -3668,6 +3666,9 @@ packages:
 
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
+
+  nuxt-framework@https://codeload.github.com/Cheaterman/nuxt/tar.gz/3d6addec736cf53411145c99ace3c90c4d65bb73:
+    resolution: {tarball: https://codeload.github.com/Cheaterman/nuxt/tar.gz/3d6addec736cf53411145c99ace3c90c4d65bb73}
 
   nuxt@3.16.0:
     resolution: {integrity: sha512-4j2tuHo+kcComQ1WrCD+i1w3UFOHrcnNH30cwiEY/WZZlBZOlC6DtUm6aBjhfpBFaMYsF4PbyKsNW+7FHwckHA==}
@@ -5839,7 +5840,7 @@ snapshots:
   '@nuxt/devtools-kit@2.2.1(magicast@0.3.5)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))':
     dependencies:
       '@nuxt/kit': 3.16.0(magicast@0.3.5)
-      '@nuxt/schema': 3.16.0
+      '@nuxt/schema': nuxt-framework@https://codeload.github.com/Cheaterman/nuxt/tar.gz/3d6addec736cf53411145c99ace3c90c4d65bb73
       execa: 9.5.2
       vite: 6.2.1(@types/node@22.13.10)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0)
     transitivePeerDependencies:
@@ -5961,13 +5962,6 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  '@nuxt/schema@3.16.0':
-    dependencies:
-      consola: 3.4.0
-      defu: 6.1.4
-      pathe: 2.0.3
-      std-env: 3.8.1
-
   '@nuxt/telemetry@2.6.5(magicast@0.3.5)':
     dependencies:
       '@nuxt/kit': 3.16.0(magicast@0.3.5)
@@ -5989,7 +5983,7 @@ snapshots:
   '@nuxt/test-utils@3.17.2(@types/node@22.13.10)(jiti@2.4.2)(magicast@0.3.5)(terser@5.37.0)(typescript@5.8.2)(vitest@3.0.8(@types/debug@4.1.12)(@types/node@22.13.10)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))(yaml@2.7.0)':
     dependencies:
       '@nuxt/kit': 3.16.0(magicast@0.3.5)
-      '@nuxt/schema': 3.16.0
+      '@nuxt/schema': nuxt-framework@https://codeload.github.com/Cheaterman/nuxt/tar.gz/3d6addec736cf53411145c99ace3c90c4d65bb73
       c12: 3.0.2(magicast@0.3.5)
       consola: 3.4.0
       defu: 6.1.4
@@ -8491,14 +8485,14 @@ snapshots:
 
   lilconfig@3.1.3: {}
 
-  listhen@1.9.0:
+  listhen@https://codeload.github.com/Cheaterman/listhen/tar.gz/f4a2643e3da3f6816b8fc003dd34a6e9a5aedbd2:
     dependencies:
       '@parcel/watcher': 2.5.0
       '@parcel/watcher-wasm': 2.5.0
       citty: 0.1.6
       clipboardy: 4.0.0
       consola: 3.4.0
-      crossws: 0.3.1
+      crossws: 0.3.4
       defu: 6.1.4
       get-port-please: 3.1.2
       h3: 1.15.1
@@ -9012,7 +9006,7 @@ snapshots:
       jiti: 2.4.2
       klona: 2.0.6
       knitwork: 1.2.0
-      listhen: 1.9.0
+      listhen: https://codeload.github.com/Cheaterman/listhen/tar.gz/f4a2643e3da3f6816b8fc003dd34a6e9a5aedbd2
       magic-string: 0.30.17
       magicast: 0.3.5
       mime: 4.0.6
@@ -9112,7 +9106,7 @@ snapshots:
       jiti: 2.4.2
       klona: 2.0.6
       knitwork: 1.2.0
-      listhen: 1.9.0
+      listhen: https://codeload.github.com/Cheaterman/listhen/tar.gz/f4a2643e3da3f6816b8fc003dd34a6e9a5aedbd2
       magic-string: 0.30.17
       magicast: 0.3.5
       mime: 4.0.6
@@ -9220,13 +9214,15 @@ snapshots:
     dependencies:
       boolbase: 1.0.0
 
+  nuxt-framework@https://codeload.github.com/Cheaterman/nuxt/tar.gz/3d6addec736cf53411145c99ace3c90c4d65bb73: {}
+
   nuxt@3.16.0(@parcel/watcher@2.5.0)(@types/node@22.13.10)(db0@0.3.1)(eslint@9.22.0(jiti@2.4.2))(ioredis@5.6.0)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.35.0)(terser@5.37.0)(typescript@5.8.2)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))(yaml@2.7.0):
     dependencies:
       '@nuxt/cli': link:packages/nuxt-cli
       '@nuxt/devalue': 2.0.2
       '@nuxt/devtools': 2.2.1(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.2))
       '@nuxt/kit': 3.16.0(magicast@0.3.5)
-      '@nuxt/schema': 3.16.0
+      '@nuxt/schema': nuxt-framework@https://codeload.github.com/Cheaterman/nuxt/tar.gz/3d6addec736cf53411145c99ace3c90c4d65bb73
       '@nuxt/telemetry': 2.6.5(magicast@0.3.5)
       '@nuxt/vite-builder': 3.16.0(@types/node@22.13.10)(eslint@9.22.0(jiti@2.4.2))(magicast@0.3.5)(optionator@0.9.4)(rollup@4.35.0)(terser@5.37.0)(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2))(yaml@2.7.0)
       '@oxc-parser/wasm': 0.56.5

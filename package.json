@@ -45,5 +45,11 @@
     "h3": "^1.15.1",
     "nitropack": "npm:nitropack-nightly",
     "nuxi": "workspace:*"
+  },
+  "pnpm": {
+    "overrides": {
+      "listhen": "Cheaterman/listhen#ipc-listhen",
+      "@nuxt/schema": "Cheaterman/nuxt#schema"
+    }
   }
 }
