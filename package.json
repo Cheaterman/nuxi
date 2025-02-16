@@ -37,7 +37,7 @@
     "h3": "^1.15.0",
     "httpxy": "^0.1.5",
     "jiti": "^1.21.6",
-    "listhen": "github:Cheaterman/listhen#ipc-listhen",
+    "listhen": "github:el3/listhen#ipc-listhen",
     "magicast": "^0.3.4",
     "mlly": "^1.7.1",
     "nuxt": "^3.15.4",
@@ -71,7 +71,7 @@
   },
   "pnpm": {
     "overrides": {
-      "listhen": "github:Cheaterman/listhen#ipc-listhen",
+      "listhen": "github:el3/listhen#ipc-listhen",
       "@nuxt/schema": "github:Cheaterman/nuxt#schema"
     }
   }
